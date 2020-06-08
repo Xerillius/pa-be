@@ -2,9 +2,9 @@
 exports.up = function(knex) {
   return knex.schema.createTable('food_items', table => {
     table.increments()
-    table.string('name', 36)
+    table.string('name')
       .notNullable()
-    table.string('type', 36)
+    table.string('type')
       .notNullable()
     table.string('size_tag')
       .notNullable()

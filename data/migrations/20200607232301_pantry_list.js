@@ -8,7 +8,7 @@ exports.up = function(knex) {
       .notNullable()
     table.integer('quantity')
       .notNullable()
-    table.string('description', 128)
+    table.string('description')
   })
 };
 
