@@ -5,7 +5,7 @@ exports.up = function(knex) {
     table.string('name', 36)
       .notNullable()
     table.string('type', 36)
-      .notNullablle()
+      .notNullable()
     table.string('size_tag')
       .notNullable()
     table.float('size_num')
