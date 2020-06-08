@@ -16,3 +16,5 @@ server.get('/', (req, res) => {
     api: "is up!"
   })
 })
+
+module.exports = server
