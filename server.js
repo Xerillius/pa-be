@@ -7,6 +7,10 @@ server.use(helmet())
 server.use(express.json())
 server.use(cors())
 
+const authRouter = require('./routers/authRouter')
+
+server.use('/api/auth', authRouter)
+
 server.get('/', (req, res) => {
   res.status(200).json({
     api: "is up!"
